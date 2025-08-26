@@ -2,7 +2,7 @@
 
 A clean, modern, and easily deployable NFT marketplace powered by Manifold. Anyone can deploy this marketplace in minutes with minimal configuration required.
 
-![Marketplace Preview](https://via.placeholder.com/800x400/667eea/ffffff?text=Simple+NFT+Marketplace)
+[Marketplace Preview, my series MEGACORPS used a similiar strategy for my block explorer artworks](https://megacorps.xyz)
 
 ## ✨ Features
 
@@ -83,7 +83,7 @@ Edit the `claimids.js` file to add your collections:
 
 1. In Manifold Studio, create your NFT claims
 2. Copy the **Claim ID** (usually a number like 12345)
-3. Add the claim ID to your `claimids.js` file
+3. Add the claim ID to your `claimids.js` file (currently has my testnet claims for visual guidance.)
 4. The marketplace will automatically fetch claim data from Manifold's API
 
 ### 5. Deploy!
@@ -267,11 +267,11 @@ ui: {
 
 ### Finding Your Client ID
 
-1. Go to [Manifold Studio](https://studio.manifoldxyz.dev/)
-2. Sign in with your wallet
-3. Navigate to your app
-4. Go to **Settings** → **API Keys**
-5. Copy the **Client ID**
+1. Go to [Manifold Studio](https://developer.manifoldxyz.dev/)
+2. Sign in
+3. Create your app.
+4. Get the client name and ID
+5. Copy the **Client ID** don't share your client secret.
 
 ### Finding Claim IDs
 
@@ -287,7 +287,7 @@ ui: {
 
 For testing, use Sepolia testnet:
 - Set `network: "11155111"` in config
-- Get test ETH from [Sepolia Faucet](https://sepoliafaucet.com/)
+- Get test ETH from [Google Sepolia Faucet]([https://sepoliafaucet.com/](https://cloud.google.com/application/web3/faucet/ethereum/sepolia)) or your faucet of choosing.
 - Create test claims in Manifold Studio
 
 ## 🚀 Deployment Options
@@ -424,5 +424,11 @@ Feel free to:
 ---
 
 **Happy Building! 🚀**
+
+If you can, feel free to check out my block interactive token series: [MEGACORPS](https://megacorps.xyz)
+Play with the tokens on Manifold: [MEGACORPS ON MANIFOLD](https://manifold.xyz/@srodan/contract/182841584)
+
+
+Buying MEGACORPS artworks will help fund new ideas and act as a perpetual allowlist for future series that will build on them.
 
 *Remember: Always test on testnets before deploying to mainnet!*
