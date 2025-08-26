@@ -145,7 +145,7 @@ You have **two ways** to deploy your marketplace, choose the one that fits your 
 1. Configure your `config.js` and `claimids.js` files
 2. Install dependencies: `npm install`
 3. Build single file: `npm run build`
-4. Upload **only** the `dist/index.html` file to your hosting service
+4. Upload **only** the `dist/index.html` file to your hosting service OR use netlify/ vercel builds.
 
 > 💡 **Note**: The build creates a single `dist/index.html` file that contains everything. You only need to upload this one file!
 
@@ -304,7 +304,8 @@ For testing, use Sepolia testnet:
 
 1. Go to [Netlify](https://netlify.com)
 2. Drag your marketplace folder to the deploy area
-3. Get instant deployment with custom domain options
+3. OR instead of step 2, publish a private repo to github, and use the npm install && npm run build as the build command and use dist as the directory.
+4. Get instant deployment with custom domain options
 
 ### Vercel (Free)
 
