@@ -5,7 +5,8 @@ Use this checklist to ensure your marketplace is properly configured and ready t
 ## ✅ Pre-Deployment Checklist
 
 ### 1. Manifold Setup
-- [ ] Created account at [Manifold Studio](https://studio.manifoldxyz.dev/)
+- [ ] Created account at [Manifold Studio](https://studio.manifold.xyz/)
+- [ ] Created account at [Manifold Dev](https://developer.manifoldxyz.dev/)
 - [ ] Created or have access to an app
 - [ ] Copied Client ID from app settings
 - [ ] Created NFT claims in Manifold Studio
