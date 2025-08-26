@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multiclaim Manifold Marketplace</title>
+    
+    <!-- Manifold Widgets -->
+    <link rel="stylesheet" href="https://connect.manifoldxyz.dev/3.3.0/connect.css">
+    <link rel="stylesheet" href="https://claims.manifoldxyz.dev/1.16.1/claimComplete.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="marketplace-header">
+        <div class="container">
+            <h1 class="marketplace-title">NFT Marketplace</h1>
+            <div class="header-controls">
+                <!-- Manifold Connect Widget -->
+                <div id="connect-widget-container">
+                    <div data-widget="m-connect" 
+                         data-app-name="SimpleMarketplace"
+                         data-client-id=""
+                         data-network="1"
+                         data-multi="false"
+                         data-auto-reconnect="false">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="marketplace-main" id="mainMarketplace">
+        <div class="container">
+            <!-- Configuration Notice -->
+            <div id="config-notice" class="config-notice">
+                <h3>⚙️ Configuration Required</h3>
+                <p>Please edit the <strong>config.js</strong> file to add your Manifold client ID, and <strong>claimids.js</strong> to configure your collections.</p>
+            </div>
+
+            <!-- Collections Grid -->
+            <section class="collections-section">
+                <h2>Collections</h2>
+                <div id="collections-grid" class="collections-grid">
+                    <!-- Collections will be loaded dynamically -->
+                </div>
+            </section>
+
+            <!-- Shopping Cart -->
+            <aside class="cart-section">
+                <div class="cart-header">
+                    <h3>🛒 Cart</h3>
+                    <button id="clear-cart" class="clear-cart-btn">Clear</button>
+                </div>
+                <div id="cart-items" class="cart-items">
+                    <p class="cart-empty">Your cart is empty</p>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">Total: <span id="cart-total">0 ETH</span></div>
+                    <button id="checkout-btn" class="checkout-btn" disabled>Checkout</button>
+                </div>
+            </aside>
+        </div>
+    </main>
+
+    <!-- Manifold Scripts -->
+    <script src="https://connect.manifoldxyz.dev/3.3.0/connect.umd.min.js"></script>
+    <script src="https://claims.manifoldxyz.dev/1.16.1/claimComplete.umd.min.js"></script>
+    
+    <!-- Manifold Provider Detection -->
+    <script type="module">
+        import { detectManifoldEthereumProvider } from "https://cdn.skypack.dev/@manifoldxyz/frontend-provider-utils";
+        window.detectManifoldEthereumProvider = detectManifoldEthereumProvider;
+    </script>
+
+    <!-- App Scripts -->
+    <script type="module" src="/config.js"></script>
+    <script type="module" src="/marketplace.js"></script>
+</body>
+</html>

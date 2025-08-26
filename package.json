@@ -1,0 +1,15 @@
+{
+  "name": "simple-marketplace",
+  "version": "1.0.0",
+  "description": "A simple NFT marketplace powered by Manifold",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^7.1.3",
+    "vite-plugin-singlefile": "^2.3.0"
+  }
+}
